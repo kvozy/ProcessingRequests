@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import RequestList from '../components/RequestList';
 const Home = () => {
 
   const [username, setUsername] = useState('');
@@ -43,6 +44,7 @@ const Home = () => {
         </div>
         <button className='logout' onClick={handleLogout}>Выйти</button>
       </div>
+      <RequestList />
     </div>
   );
 };

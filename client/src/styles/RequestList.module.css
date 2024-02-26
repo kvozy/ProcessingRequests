@@ -1,0 +1,25 @@
+li{
+    list-style-type: none;
+    color: rgb(185, 185, 185);
+}
+
+.list{
+    border: 1px solid black;
+    margin-top: 10px;
+    min-width: 300px;
+    padding: 10px;
+}
+.list span{
+    color: rgb(119, 119, 119);
+}
+.list div{
+    display: flex; 
+    flex-direction: row; 
+}
+.list strong{
+    margin: 10px 0 0 3px; 
+}
+.list div p{
+    margin: 3px 0 0 6px; 
+}
+

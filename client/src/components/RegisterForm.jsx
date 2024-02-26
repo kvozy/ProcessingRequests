@@ -13,7 +13,6 @@ export const RegisterForm = () => {
 
       if(!name || !login || !password){
         return setErrorMessage('Некорректные данные')
-        
       }
         try {
           await axios.post('http://localhost:3000/api/user/registration', { name, login, password });

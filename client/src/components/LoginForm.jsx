@@ -24,7 +24,7 @@ const LoginForm = ({ onLoginSuccess }) => {
       const token = response.data.token;
 
       if (token) {
-        console.log('Вход выполнен успешно. Токен:', token);
+        // console.log('Вход выполнен успешно. Токен:', token);
         localStorage.setItem('authToken', token);
 
         onLoginSuccess();
