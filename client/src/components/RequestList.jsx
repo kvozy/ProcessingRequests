@@ -62,7 +62,7 @@ const RequestList = () => {
 
               <div>
                 <p><span>Дата завершения:</span> {request.date_of_completion || 'Пусто'}</p>
-                <p><span>Время добавления:</span> {request.time_added || 'Пусто'}</p>
+                <p><span>Добавленное время:</span> {request.time_added || 'Пусто'}</p>
                 <p><span>Комментарии:</span> {request.comments || 'Пусто'}</p>
                 <p><span>Дополнение:</span> {request.addendum || 'Пусто'}</p>
               </div>

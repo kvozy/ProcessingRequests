@@ -32,14 +32,14 @@ class requestController {
             WHERE
                 t1.client_id = ?`;
 
-        await connection.query(sqlQuery, [userId], (error, results, fields) => {
+        await connection.query(sqlQuery, [userId], (error, results) => {
             if (error) {
-                console.error('Ошибка выполнения запроса: ' + error.stack);
+                console.error('Ошибка выполнения запроса: ' + error);
                 res.status(500).json({ message: 'Ошибка сервера' });
                 return;
             }
 
-            res.json({ message: 'Успешно получены данные', results });
+            res.json({ results });
         });
     }
 }
